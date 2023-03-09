@@ -1,0 +1,33 @@
+//*******DAY 4**********
+//Get an input number from the user and check whether it is a positive or negative number.
+//Input: -10
+//Output: Negative number
+//
+//Input:0
+//Output:Neither positive nor negative
+//
+//Input :15
+//Output :Positive number
+
+package talBasics;
+
+import java.util.Scanner;
+
+public class NumberPositiveOrNegative {
+
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+	        System.out.print("Enter a Number: ");
+	        int number = sc.nextInt();
+	        if (number > 0) {
+	            System.out.println("Positive Number");
+	        } else if (number < 0) {
+	            System.out.println("Negative Number");
+	        } else {
+	            System.out.println("Neither positive nor Negative ");
+	        }
+	        sc.close();
+
+	}
+
+}
