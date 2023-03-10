@@ -1,0 +1,49 @@
+/* 
+		* Day 6
+		* Get the value of x and y coordinates as input from the user and check in which quadrant the point lies and print it.
+
+		* Input
+		* 10 20
+		* Output
+		* This point lies in first quadrant.
+
+		* Input
+		* -10 20
+		* Output
+		* This point lies in second quadrant.
+		*/
+package talBasics;
+
+import java.util.Scanner;
+
+public class Quadrant {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		        Scanner sc = new Scanner(System.in);
+		        System.out.println("Please Enter Value For x Co-ordinate");
+		        int x = sc.nextInt();
+		        System.out.println("Please Enter Value For y Co-ordinate");
+		        int y = sc.nextInt();
+		        if (x > 0 && y > 0) // First Quadrant 
+		        {
+		            System.out.println("This point lies in first quadrant.");
+		        } else if (x < 0 && y > 0) // Second Quadrant 
+		        {
+		            System.out.println("This point lies in Second quadrant.");
+		        } else if (x < 0 && y < 0) // Third Quadrant 
+		        {
+		            System.out.println("This point lies in Third quadrant.");
+		        } else if (x > 0 && y < 0) // Fourth Quadrant 
+		        {
+		            System.out.println("This point lies in Fourth quadrant.");
+		        } else // Origin Point 
+		        {
+		            System.out.println("This Point Is Origin");
+		        }
+		        sc.close();
+		    }
+		
+
+}
