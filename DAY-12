@@ -1,0 +1,33 @@
+//******DAY 12****
+//Get a number from user and then find the sum of the digits in the given number.
+
+//let the number = 341
+//Sum of digits is 3+4+1= 8
+
+//Input:4521
+//Output:12
+
+
+package talBasics;
+
+import java.util.*;
+
+public class FindSum {
+	public static void main(String[] args) {
+	    // TODO Auto-generated method stub
+		int sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int number=sc.nextInt();
+		while(number!=0) {
+			int x =number%10;
+			number/=10;
+			sum=sum+x;
+			
+		}
+		System.out.println(sum);
+		sc.close();
+
+	}
+
+}
